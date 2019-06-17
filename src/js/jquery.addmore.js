@@ -65,6 +65,13 @@
                     callback.call(this, settings, newBlockId);
                 }
             });
+            
+            $(`.${containerClass}`).each(function(index, element) {
+                var $elem = $(element);
+                $elem.find('button.btn-remove').on('click', function(){
+                    self.removeItem(this, self, settings, callback);
+                })
+            });
         },
         bindLoader: function(settings, eventType) {
             var self = this;
