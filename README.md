@@ -1,1 +1,1 @@
-# jQuery-Add-More
+# jQuery Add More Plugin
